@@ -11,17 +11,28 @@
 <body>
 
     <div class="slider-wrap">
-        <div class="slider">
-            <img src="img/фото-1.jpg" alt="slide1">
-            <img src="img/фото-2.jpg" alt="slide2">
-            <img src="img/фото-3.jpg" alt="slide3">
-            <img src="img/фото-4.jpg" alt="slide4">
+        <ul class="slider">
+            <li class="slider__item">
+                <img class="slider__slide" src="img/фото-1.jpg" alt="slide1">
+            </li>
+            <li class="slider__item">
+                <img class="slider__slide" src="img/фото-2.jpg" alt="slide2">
+            </li>
+            <li class="slider__item">
+                <img class="slider__slide" src="img/фото-3.jpg" alt="slide3">
+            </li>
+            <li class="slider__item">
+                <img class="slider__slide" src="img/фото-4.jpg" alt="slide4">
+            </li>
+        </ul>
+        <div class="btn-wrap">
+            <button class="btn__prev" id="btn-prev"></button>
+            <button class="btn__next" id="btn-next"></button>
         </div>
-        <button class="btn btn__prev" id="btn-prev"></button>
-        <button class="btn btn__next" id="btn-next"></button>
     </div>
 
-    <script src="script.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>

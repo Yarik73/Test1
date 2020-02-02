@@ -18,15 +18,10 @@ img {
      height: auto;
 }
 
-.visually-hidden {
-    position: absolute;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    width: 1px;
-    margin: -1px;
+ul {
+    margin: 0;
     padding: 0;
-    border: 0;
+    list-style: none;
 }
 
 .slider-wrap {
@@ -34,21 +29,28 @@ img {
     margin: 50px auto;
     width: 478px;
     height: 215px;
+    overflow: hidden;
 }
 
 .slider {
     position: relative;
     width: 478px;
     height: 215px;
-    overflow: hidden;
 }
 
-.slider img {
+.slider__item {
     width: 478px;
     height: 215px;
-    position: absolute;
-    opacity: 1;
-    transition: all ease 1s;
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.slider__slide {
+    width: 478px;
+    height: 215px;
 }
 
 .btn__prev,
@@ -59,7 +61,8 @@ img {
     padding: 0;
     width: 38px;
     height: 38px;
-    background-color: #3a3a3a;
+    background-color: #2a2a2a;
+    opacity: 0.8;
     cursor: pointer;
     outline: none;
     box-shadow: 0 8px 15px rgba(0,0,0,.1);
@@ -123,6 +126,7 @@ img {
 
 .btn__prev:hover,
 .btn__next:hover {
+    opacity: 1;
     box-shadow: 0 15px 20px rgba(0,0,0,.1);
     color: white;
     transform: translateY(-3px);
