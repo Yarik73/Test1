@@ -30,5 +30,4 @@ $(document).ready(function ($) {
 
     $slider.find('.btn__prev').click(prevSlide);
     $slider.find('.btn__next').click(nextSlide);
-
 });
