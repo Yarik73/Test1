@@ -190,6 +190,7 @@ a {
 }
 
 .product__item {
+    position: relative;
     margin-bottom: 40px;
     width: 33.333333%;
     padding: 10px 8px;
@@ -252,6 +253,9 @@ a {
 
 .product__item:hover .product__text-wrap {
     display: block;
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 100;
 }
 
 .product__text {
