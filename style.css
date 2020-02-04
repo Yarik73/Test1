@@ -193,7 +193,8 @@ a {
 .product__item {
     position: relative;
     margin-bottom: 29px;
-    width: 33.333333%;
+    max-width: 160px;
+    width: 100%;
     padding: 10px 8px;
     border: 3px solid transparent;
 }
