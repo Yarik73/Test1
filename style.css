@@ -181,7 +181,7 @@ a {
 /* products */
 
 .product__wrap {
-    width: 480px;
+    max-width: 480px;
     margin: 50px auto;
 }
 
@@ -202,9 +202,10 @@ a {
     border: 3px solid #eb5c3e;
 }
 
-.product__img {
+.product__wrap-img {
     width: 135px;
     height: 135px;
+    margin-bottom: 10px;
 }
 
 .product__title {
