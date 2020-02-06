@@ -132,10 +132,9 @@ a {
     line-height: 16px;
     color: #ffffff;
     background-color: #3a3a3a;
-    transition: .2s;
 }
 
-.btn__cart:hover {
+.product__item:hover .btn__cart {
     background-color: #eb5c3e;
 }
 
@@ -200,7 +199,8 @@ a {
 }
 
 .product__item:hover {
-    border: 3px solid #eb5c3e;
+    background-color: #fff;
+    border: 2px solid #eb5c3e;
 }
 
 .product__wrap-img {
@@ -214,7 +214,9 @@ a {
     font-weight: 500;
     line-height: 16px;
     color: black;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
+    height: 48px;
+    overflow: hidden;
 }
 
 .product__price {
@@ -252,16 +254,11 @@ a {
 
 .product__text-wrap {
     display: none;
-    border: 3px solid #eb5c3e;
-    width: calc(100% + 6px);
-    left: -3px;
-    border-top: none;
 }
 
 .product__item:hover .product__text-wrap {
     display: block;
     position: absolute;
-    background-color: #ffffff;
     z-index: 100;
 }
 
@@ -272,64 +269,37 @@ a {
     padding: 10px 8px;
 }
 
-.product__star-one {
+.product__star {
+    height: 11px;
+    background: url("img/star-black.png") repeat left;
+}
+
+.product__star--one {
     width: 12px;
-    height: 11px;
-    background: url("img/star-black.png") repeat left;
 }
 
-.product__star-two {
+.product__star--two {
     width: 24px;
-    height: 11px;
-    background: url("img/star-black.png") repeat left;
 }
 
-.product__star-three {
+.product__star--three {
     width: 36px;
-    height: 11px;
-    background: url("img/star-black.png") repeat left;
 }
 
-.product__star-four {
+.product__star--four {
     width: 48px;
-    height: 11px;
-    background: url("img/star-black.png") repeat left;
 }
 
-.product__star-five {
+.product__star--five {
     width: 60px;
-    height: 11px;
-    background: url("img/star-black.png") repeat left;
 }
 
-.product__item:hover .product__star-one {
-    width: 12px;
-    height: 11px;
+.product__item:hover .product__star--one,
+.product__item:hover .product__star--two,
+.product__item:hover .product__star--three,
+.product__item:hover .product__star--four,
+.product__item:hover .product__star--five {
     background: url("img/star-orange.png") repeat left;
 }
 
-.product__item:hover .product__star-two {
-    width: 24px;
-    height: 11px;
-    background: url("img/star-orange.png") repeat left;
-}
-
-.product__item:hover .product__star-three {
-    width: 36px;
-    height: 11px;
-    background: url("img/star-orange.png") repeat left;
-}
-
-.product__item:hover .product__star-four {
-    width: 48px;
-    height: 11px;
-    background: url("img/star-orange.png") repeat left;
-}
-
-.product__item:hover .product__star-five {
-    width: 60px;
-    height: 11px;
-    background: url("img/star-orange.png") repeat left;
-}
-
-
+/* media */
