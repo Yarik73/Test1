@@ -195,12 +195,28 @@ a {
     max-width: 160px;
     width: 100%;
     padding: 10px 8px;
-    border: 3px solid transparent;
+    background-color: #fff;
+    border: 2px solid transparent;
+}
+
+.product__item:hover.product__item:before {
+    display: block;
 }
 
 .product__item:hover {
+    border: 2px solid #eb5c3e;
+}
+
+.product__item:hover .product__text-wrap {
+    display: block;
+    position: absolute;
+    left: -2px;
+    right: -2px;
+    top: 100%;
+    z-index: 100;
     background-color: #fff;
     border: 2px solid #eb5c3e;
+    border-top: 0;
 }
 
 .product__wrap-img {
@@ -254,6 +270,17 @@ a {
 
 .product__text-wrap {
     display: none;
+}
+
+.product__text-wrap:after {
+    content: "";
+    position: absolute;
+    top: -300px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 205px;
+    height: 568px;
+    background: url("img/тень.png") no-repeat center;z-index: -999;
 }
 
 .product__item:hover .product__text-wrap {
