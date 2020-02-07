@@ -199,10 +199,6 @@ a {
     border: 2px solid transparent;
 }
 
-.product__item:hover.product__item:before {
-    display: block;
-}
-
 .product__item:hover {
     border: 2px solid #eb5c3e;
 }
