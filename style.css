@@ -194,25 +194,21 @@ a {
     margin-bottom: 29px;
     max-width: 160px;
     width: 100%;
-    padding: 10px 8px;
     background-color: #fff;
+}
+
+.product__item-content {
+    padding: 10px 8px;
     border: 2px solid transparent;
 }
 
-.product__item:hover {
-    border: 2px solid #eb5c3e;
-}
-
-.product__item:hover .product__text-wrap {
+.product__item:hover .product__item-content {
     display: block;
     position: absolute;
-    left: -2px;
-    right: -2px;
-    top: 100%;
     z-index: 100;
     background-color: #fff;
     border: 2px solid #eb5c3e;
-    border-top: 0;
+    box-shadow: 0 5px 15px #000000;
 }
 
 .product__wrap-img {
@@ -254,6 +250,21 @@ a {
     background-color: #f0f0f0;
 }
 
+.product__text-wrap {
+    display: none;
+}
+
+.product__item:hover .product__text-wrap {
+    display: block;
+}
+
+.product__text {
+    font-size: 11px;
+    line-height: 14px;
+    color: #636363;
+    padding: 10px 8px;
+}
+
 .product__star-wrap {
     position: absolute;
     top: 6px;
@@ -262,34 +273,6 @@ a {
     padding-left: 10px;
     padding-right: 10px;
     background-color: #fff;
-}
-
-.product__text-wrap {
-    display: none;
-}
-
-.product__text-wrap:after {
-    content: "";
-    position: absolute;
-    top: -300px;
-    right: 50%;
-    transform: translateX(50%);
-    width: 205px;
-    height: 568px;
-    background: url("img/тень.png") no-repeat center;z-index: -999;
-}
-
-.product__item:hover .product__text-wrap {
-    display: block;
-    position: absolute;
-    z-index: 100;
-}
-
-.product__text {
-    font-size: 11px;
-    line-height: 14px;
-    color: #636363;
-    padding: 10px 8px;
 }
 
 .product__star {
